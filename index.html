@@ -13,9 +13,11 @@
 </head>
 
 <body>
+    <div class="container">
     <h1 class="text-center text-primary m-4">User Details</h1>
             <div id="result" class="row">
         </div>
+    </div>
     </div>
 </body>
 <script>
@@ -44,25 +46,25 @@
     //Step 5 : to display the array of data into html page
     function displayArray(user_array) {
         for (let user of user_array) {
-            htmlData = `<div class="col-3 shadow-lg p-3 mb-5 bg-white rounded m-5" style="width: 25rem";>
+            htmlData = `<div class="col-3 shadow-lg p-3 mb-5 bg-white rounded m-5" style="width: 21rem";>
             <div class="card border-0">
                         <div class="card-body">
                              <h3 class="text-danger text-center border-bottom ">User : ${user.id}</h3>
-                            <h5 class="card-title p-2">ID : <span class="text-info">${user.id}</span></h5>
-                            <h5 class="card-title p-2">Name : <span class="text-info">${user.name}</span></h5>
-                            <h5 class="card-title p-2">Username : <span class="text-info">${user.username}</span></h5>
-                            <h5 class="card-title p-2">Email : <span class="text-info">${user.email}</span></h5>
-                            <h5 class="card-title p-2">Address : </h5>
+                            <h6 class="card-title p-2">ID : <span class="text-info">${user.id}</span></h6>
+                            <h6 class="card-title p-2">Name : <span class="text-info">${user.name}</span></h6>
+                            <h6 class="card-title p-2">Username : <span class="text-info">${user.username}</span></h6>
+                            <h6 class="card-title p-2">Email : <span class="text-info">${user.email}</span></h6>
+                            <h6 class="card-title p-2">Address : </h6>
                             <p class="card-title p-2">Street : <span class="text-info">${user.address.street}</span></p>
                             <p class="card-title p-2">Suite : <span class="text-info">${user.address.suite}</span></p>
                             <p class="card-title p-2">City : <span class="text-info">${user.address.city}</span></p>
                             <p class="card-title p-2">Zipcode : <span class="text-info">${user.address.zipcode}</span></p>
-                            <h5 class="card-title p-2">Location : </h5>
+                            <h6 class="card-title p-2">Location : </h6>
                             <p class="card-title p-2">Latitude : <span class="text-info">${user.address.geo.lat}</span></p>
                             <p class="card-title p-2">Longtitude : <span class="text-info">${user.address.geo.lng}</span></p>
-                            <h5 class="card-title p-2">Phone : <span class="text-info">${user.phone}</span></h5>
-                            <h5 class="card-title p-2">Website : <span class="text-info">${user.website}</span></h5>
-                            <h5 class="card-title p-2">Company : </h5>
+                            <h6 class="card-title p-2">Phone : <span class="text-info">${user.phone}</span></h6>
+                            <h6 class="card-title p-2">Website : <span class="text-info">${user.website}</span></h6>
+                            <h6 class="card-title p-2">Company : </h6>
                             <p class="card-title p-2">Name : <span class="text-info">${user.company.name}</span></p>
                             <p class="card-title p-2">Catchphrase : <span class="text-info">${user.company.catchPhrase}</span></p>
                             <p class="card-title p-2">BS : <span class="text-info">${user.company.bs}</span></p>
