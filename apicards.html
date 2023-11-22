@@ -14,9 +14,7 @@
 
 <body>
     <h1 class="text-center text-primary m-4">User Details</h1>
-    <div class="container">
             <div id="result" class="row">
-            </div>
         </div>
     </div>
 </body>
@@ -46,10 +44,10 @@
     //Step 5 : to display the array of data into html page
     function displayArray(user_array) {
         for (let user of user_array) {
-            htmlData = `<div class="col-3 shadow-lg p-3 mb-5 bg-white rounded m-5">
+            htmlData = `<div class="col-3 shadow-lg p-3 mb-5 bg-white rounded m-5" style="width: 25rem";>
             <div class="card border-0">
                         <div class="card-body">
-                             <h5 class="text-danger text-center border-bottom ">User : ${user.id}</h5>
+                             <h3 class="text-danger text-center border-bottom ">User : ${user.id}</h3>
                             <h5 class="card-title p-2">ID : <span class="text-info">${user.id}</span></h5>
                             <h5 class="card-title p-2">Name : <span class="text-info">${user.name}</span></h5>
                             <h5 class="card-title p-2">Username : <span class="text-info">${user.username}</span></h5>
